@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         div {
+            height: 100px;
+            width: 80px;
+            border: 3px solid black;
+
+        }
+        .Student{
+             text-decoration: none;
+             color: black;
+        }
+        .table{
+            font-size: 20px;
+        }
+        .table:hover{
+            background-image: url(image_computer.webp);
+            background-size: cover;
+            color: yellow;
+            border-radius: 15px;
+            border-color: chartreuse;
+            font-size: 20px;
+        }
+        .box{
+            height: 300px;
+            width: 300px;
+            margin-left: 300px;
+            border-radius: 50%;
+            background-color: #21e11e;
+            border: 2px solid black;
+            /*transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: steps(3);
+            transition-delay: 1s; */
+            /* transform: rotate(180deg); */
+            /* transform: scale(1, 2); */
+            /* transition: all 2s ease-in;
+            transform: skew(45deg); */
+            animation-name: colorAnimate;
+            animation-duration: 0.20s;
+            animation-timing-function: ease-in;
+            animation-delay: 0s;
+            animation-iteration-count: 10;
+        }
+        .box:hover{
+            /* background-color: rgb(228, 33, 205);
+            font-size: 50px;
+            color: aqua;
+            text-align: center;
+            transform: scale(1, 2);
+            transform: translatex(50px); */
+
+        }
+        @keyframes colorAnimate {
+            from { background-color: aqua;}
+            to { background-color: red;}
+        }
+        .box:active{
+            /* background-color: brown; */
+        }
+        .box2 {
+            height: 60px;
+            width: 50px;
+            background-color: #21e11e;
+        }
+    </style>
+</head>
+<body bgcolor="black">
+    <script>
+
+    </script>
+    <form>
+        <table class="table" bgcolor="grey" border="2px solid black" align="center" cellpadding="2px" height="400px" width="60%" >
+            <tr>
+                <td>Name:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Father's Name:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Mother's Name:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                   Male <input type="radio" name="Gender" value="Male" > 
+                   Female <input type="radio" name="Gender" value="Female" >
+                </td>
+            </tr>
+            <tr>
+                <td>Adderss:</td>
+                <td>
+                    <textarea name="Adderss" rows="2" cols="20"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Pin Code</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Course:</td>
+                <td>
+                    <select>
+                        <option value="Select">---Select---</option>
+                        <option value="O Level">O Level</option>
+                        <option value="CCC">CCC</option>
+                        <option value="PCIT">PCIT</option>
+                        <option value="ADCA">ADCA</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Country:</td>
+                <td><input type="text" name="" value="India" readonly="readonly"></td>
+            </tr>
+            <tr>
+                <td>Hobbise:</td>
+                <td>
+                    <input type="checkbox" name="" value="Singing">Singing 
+                    <input type="checkbox" name="" value="Singing">Dancing <br>
+                    <input type="checkbox" name="" value="Singing">Reading 
+                    <input type="checkbox" name="" value="Singing">Dancing 
+                    <input type="checkbox" name="" value="Singing">Plaing 
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" value="" placeholder="Enter your Email ID" ></td>
+            </tr>
+            <tr>
+                <td>Passward:</td>
+                <td><input type="password" placeholder="Passward" ></td>
+            </tr>
+            <tr>
+                <td>Applyed:</td>
+                <td><input type="time"></td>
+            </tr>
+            <tr>
+                <td>Date of Birth:</td>
+                <td><Input type="date"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td align="center">
+                    <input type="submit" value="submit" >
+                    <input type="reset" value="reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+    <form>
+        <table bgcolor="pink" width="80%">
+            <tr>
+                <td colspan="2"><h2 align="center"><a href="mahi.html" target="_self" class="Student">Student Registion Form</a> </h2></td>
+            </tr>
+            <tr>
+                <td>Student Image</td>
+                <td>
+                    <div><input type="file"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>Student Name</td>
+                <td><input type="text" maxlength="30" placeholder="Enter Your name">Max 30 caractor</td>
+            </tr>
+            <tr>
+                <td>Father'Name </td>
+                <td><input type="text" placeholder="Enter Father Name"></td>
+            </tr>
+            <tr>
+                <td>Mother'Name</td>
+                <td><Input type="text" placeholder="Enter Mother Name"></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" value="male" name="Gender"> Male
+                    <input type="radio" value="Female" name="Gender"> Female
+                </td>
+            </tr>
+            <tr>
+                <td>Date of Birth</td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td>E-mail</td>
+                <td><input type="email"></td>
+            </tr>
+            <tr>
+                <td>Passward</td>
+                <td><input type="password" placeholder="!@#$%^&*()_+0.9TFh"></td>
+            </tr>
+            <tr>
+                <td>Teliphone No.</td>
+                <td><input type="tel"></td>
+            </tr>
+            <hr>
+            <tr>
+                <td colspan="2"><h2 align="center">Permanent Address</h2></td>
+            </tr>
+            <tr>
+                <td>State</td>
+                <td><input type="text" placeholder="State"></td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td><input type="text" placeholder="City"></td>
+            </tr>
+            <tr>
+                <td>Zip Code</td>
+                <td><input type="text" placeholder="Zip Code"></td>
+            </tr>
+            <tr>
+                <td>Home No.</td>
+                <td><input type="text" name="" id="" placeholder="Home No."></td>
+            </tr>
+            <tr>
+                <tD colspan="2" align="center">
+                    <input type="submit" text="" value="submit">
+                    <input type="reset" text="reset">
+                </tD>
+                
+            </tr>
+        </table>
+    </form>
+    <br><br><br><br><br><br>
+     <div class="box"></div>
+     <div class="box2"></div>
+</body>
+</html>

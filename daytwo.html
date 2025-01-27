@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 50px;
+            width: 50px;
+            background-color: rgb(231, 87, 241);
+        }
+        @media (width: 100px) {
+            div{
+                background-color: brown;
+            }
+        }
+        @media (max-width: 200px) {
+            div{
+                background-color: aqua;
+            }
+        }
+        @media (min-width: 300px) and (max-width: 400px) {
+            div{
+                background-color: rgb(207, 226, 58);
+            }
+        }
+        div:hover {
+            width: 100px;
+            height: 500px;
+            background-color: black;
+
+        }
+    </style>
+</head>
+<body>
+    <div>this is a box</div>
+</body>
+</html>

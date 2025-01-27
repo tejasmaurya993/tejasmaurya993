@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var N1, N2, res, temp;
+        function funO
+        {
+            N1 = parseInt(document.getElementById("one").value);
+            N2 = parseInt(document.getElementById("two").value);
+            if(N1 && N2)
+        {
+            temp = document.getElementById("res");
+            temp.style.display = "block";
+            res = N1 + N2;
+            document.getElementById("add").value = res;
+            res = N1 - N2;
+            document.getElementById("subtract").value = res;
+            res = N1 * N2;
+            document.getElementById("multiply").value = res;
+            res = N1 / N2;
+            document.getElementById("divide").value = res;
+        
+        }
+        }
+    </script>
+</head>
+<body>
+    <p id="input">
+    Enter First Number(N1): <input id="one"> <br/><br/>
+    Enter Second Number(N2): <input id="two"> </p>
+    <p>
+        <button onclick="funO">Add, Subtract, Maltiply, Divide</button>
+    </p>
+    <p id="res" style="display: none;"> 
+    <br><br><hr>
+    <h1>Arithmetic Calculator</h1>
+    <table cellspacing="20">
+        <tr>
+            <td>1.</td>
+            <td>N1+N2 = <input type="Add"> </td>
+            <td>N1*N2 = <input type="Multiply"></td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>N1-N2 = <input type="Subtract"></td>
+            <td>N1/N2 = <input type="Divide"></td>
+
+        </tr>
+    </table>
+    </p>
+</body>
+</html>
